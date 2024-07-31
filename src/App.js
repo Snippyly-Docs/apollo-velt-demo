@@ -1,4 +1,4 @@
-import { VeltProvider, VeltComments, VeltCommentsSidebar, VeltCursor, VeltHuddle} from '@veltdev/react';
+import { VeltProvider, VeltComments, VeltCommentsSidebar, VeltCursor, VeltHuddle, VeltRecorderNotes} from '@veltdev/react';
 import YourAuthComponent from './components/YourAuthComponent';
 import YourDocument from './components/YourDocument';
 
@@ -9,7 +9,8 @@ function App() {
     <VeltProvider apiKey="j3AwoBkuQMTEgeqrmPve">
       <VeltHuddle/>
       <VeltCursor />
-      <VeltComments textMode={true} sidebarButtonOnCommentDialog={true} autoCategorize={true}/>
+      <VeltRecorderNotes/>
+      <VeltComments textMode={false} sidebarButtonOnCommentDialog={true} autoCategorize={true}/>
       <VeltCommentsSidebar />
       <YourAuthComponent/>
       <YourDocument/>
